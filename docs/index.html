@@ -1,0 +1,214 @@
+<!DOCTYPE  html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Press Start</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+
+</head>
+
+<body>
+    <!--La cabecera-->
+    <header>
+        <!--El logo de la página-->
+        <img id="Logo" src="images/logo.png" alt="AJOLOTE, el mejor animal del mundo" />
+        <!--El título de la página-->
+        <div class="Titulo">
+            <h1>Press start</h1>
+        </div>
+        <!--La barra de navegación de la cabecera-->
+        <nav>
+            <a class="Opcion">·Añadir Opinion </a>
+            <a class="Opcion">·Ayuda </a>
+            <a class="Opcion">·Configuración </a>
+            <a class="Opcion">·Registrarse </a>
+        </nav>
+        <div class="clear"></div>
+    </header>
+    <!--El cuerpo de la página-->
+
+    <div class="cuerpo">
+        <!--El aside-->
+        <aside>
+            <!--La foto de perfil y el nombre de usuario-->
+            <img id="fotoperfil" src="images/fotoperfil.png" alt="Foto de perfil de BeeHill" />
+            <h3 id="username">BeeHill</h3>
+            <div class="clear"></div>
+            <!--La información personal-->
+            <h4 id="personalInfo">Personal information</h4>
+            <div class="clear"></div>
+            <p class="info"> BeeHill, Member since 2017, Soria, Spain </p>
+            <!--Aquí comienzan las opiniones, todas contenidas en un div-->
+            <div class="opiniones">
+                <h4> Latest opinions</h4>
+                <div class="clear"></div>
+                <p>
+
+                    <a class="opinion">Tipical restaurante soriano:</a>
+                    <br />
+                    <br />
+                    Todo muy bueno, comida de calidad de productores locales. Buen ambiente, con una decoración
+                    clásica. Ideal para bodas y bautizos. Cabe destacar las vistas al monte desde el comedor. 7,8
+                    demasiado campo.
+                    <br />
+                    <br />
+                    <a class="opinion">Domino's Pizza de Leganés:</a>
+                    <br />
+                    <br />
+                    Buen precio, comida en abundancia y nivel de calidad suficiente. Ideal para grupos de 5-6 personas.
+                    La máquina de bebidas podría mejorarse. Siempre están subiendo el precio del buffet. 7,8 demasiada
+                    pizza.
+                    <br />
+                    <br />
+                    <a class="opinion">Comida de la resi:</a>
+                    <br />
+                    <br />
+                    Comida mediocre, nada destaca. Cumple su función y nadie sale intoxicado. Suficiente, pero
+                    mejorable.Lo mejor es la compañía y el cocido. 7,8 demasiada patata.
+
+                </p>
+            </div>
+            <div>
+                <!--Las preferencias-->
+                <h4>Preferences</h4>
+                <!-- El icono de añadir preferencias-->
+                <div class="add">
+                    <h5>+</h5>
+                </div>
+                <div class="clear"></div>
+                <!--Las preferencias en sí no tienen un icono 
+                        a parte para indicar que se eliminen, si no que es parte del mismo texto.-->
+                <div class="preference">
+                    <p>Barato X</p>
+                </div>
+                <div class="preference">
+                    <p>Cerca X</p>
+                </div>
+                <div class="preference">
+                    <p>Grupos X</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </aside>
+        <!--Este es el menu del formato de tableta, que se coloca en la parte superior, entre la cabecera y el cuerpo3-->
+        <div class="menu2">
+            <!--Cada opcion del menu contiene una texto y una imagen asociados-->
+            <div class="opcMenu1">
+                <img class="fotoMenu" src="images/ui-icons-01-1.png.jpg" alt="personal">
+                <br />
+                Personal
+            </div>
+            <div class="opcMenu2">
+                <img class="fotoMenu" src="images/ui-icons-01-2.png.jpg" alt="opiniones">
+                <br />
+
+                Opiniones
+            </div>
+            <div class="opcMenu3">
+                <img class="fotoMenu" src="images/ui-icons-01-3.png.jpg" alt="preferencias">
+                <br />
+
+                Preferencias
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!--Cada Cuerpo3 es un contenedor para dividir el lateral derecho en dos partes distintas-->
+        <div class="cuerpo3">
+            <!--En Pinfo esta contenido el formulario para introducir la informacion personal del usuarioSS-->
+
+            <div class="Pinfo">
+
+                <h2>
+                    Personal information
+                </h2>
+                <!--Este es el formulario para añadir la informacion personal-->
+
+                <form>
+                    <input type="text" name="nombre" placeholder="Nombre" class="nombre">
+                    <input type="text" name="apellido" placeholder="Apellido" class="apellido">
+                    <input type="text" name="email" placeholder="Email" class="email">
+                    <input type="text" name="address" placeholder="Direccion" class="address">
+                    <input type="text" name="telefono" placeholder="Telefono" class="telefono">
+                    <input type="text" name="cumple" placeholder="Cumple" class="cumple">
+
+                </form>
+
+            </div>
+
+        </div>
+        <div class="cuerpo3">
+            <!--En actividad se muestran los puntos, el nivel y el numero de opiniones y fotos del usuario, separado en  -->
+
+            <div class="actividad">
+
+                <h2>
+                    Actividad
+                </h2>
+                <!--A continuacion viene la actividad sesparada en las categorias ya mencionadas-->
+
+                <div>
+                    <div class="ptos">
+                        <h5>Score</h5>
+                        <h5>13000</h5>
+                    </div>
+                    <div class="lvl">
+                        <h5>Level</h5>
+                        <h5>98</h5>
+                    </div>
+                    <div class="nopiniones">
+                        <h5>Opinions</h5>
+                        <h5>3</h5>
+                    </div>
+                    <div class="nfotos">
+                        <h5>Pictures</h5>
+                        <h5>10</h5>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"> </div>
+    </div>
+    <!--El pie de página-->
+    <footer>
+        <!--Todos los enlaces excepto el primero se abren en una nueva pestaña-->
+        <div class="pie">
+            <!--Este enlace lleva a la misma página, que es el inicio-->
+            <a class="pies" href="main.html">Inicio</a>
+            |
+            <!--Este enlace lleva a un tuit que nos parecía gracioso-->
+            <a class="pies" href="https://twitter.com/Leironcia/status/1041413976335310848" target="_blank">Twitter</a>
+            |
+            <!--Este lleva a la página principal de facebook-->
+            <a class="pies" href="https://es-es.facebook.com/" target="_blank">Facebook</a>
+            |
+            <!--Este lleva a la página principal de gmail-->
+            <a class="pies" href="https://www.google.com/gmail/" target="_blank">Mail</a>
+        </div>
+    </footer>
+    <!--Este es el menu de la version de movil,que se muestra en la parte inferior-->
+    <div class="menu1">
+        <div class="opcMenu1">
+            <!--Cada opcion del menu contiene una texto y una imagen asociados-->
+            <img class="fotoMenu" src="images/ui-icons-01-1.png.jpg" alt="personal">
+            <br />
+            Personal
+        </div>
+        <div class="opcMenu2">
+            <img class="fotoMenu" src="images/ui-icons-01-2.png.jpg" alt="opiniones">
+            Opiniones
+        </div>
+        <div class="opcMenu3">
+            <img class="fotoMenu" src="images/ui-icons-01-3.png.jpg" alt="preferencias">
+            Preferencias
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>
